@@ -10,26 +10,89 @@
       type="text/css"
       href="assets/plugins/bootstrap5.3/css/bootstrap.css"
     />
+    <!-- Fontawesome 5.15.4 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/plugins/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/blog.css" />
   </head>
   <body>
     <header>
-      
-      
+      <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-    
-      <section class="container">
+      <section class="container mb-5">
         <div class="row">
-          <section class="col-sm-6 float-start">
+          <section class="col-sm-12 col-md-6 col-lg-9 float-start">
             <article>
               <div>
                 <img
-                  class=""
+                  class="img-detalle mb-3"
                   src="./assets/images/blog/imgblog.png"
                   alt="Detalle del blog"
                 />
-                <h3>Nombre del Articulo</h3>
-                <p>
+                <h3 class="mb-5">Nombre del Articulo</h3>
+                <p class="mb-5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Similique consequatur dolore rerum aliquam impedit quibusdam
                   reiciendis perspiciatis, provident id? Ad dolore nulla
@@ -38,93 +101,299 @@
                   elit. Similique consequatur dolore rerum aliquam impedit
                   quibusdam reiciendis perspiciatis, provident id? Ad dolore
                   nulla aspernatur ducimus aperiam quod veritatis consequatur
-                  modi quibusdam.
+                  modi quibusdam.Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Similique consequatur dolore rerum aliquam
+                  impedit quibusdam reiciendis perspiciatis, provident id? Ad
+                  dolore nulla aspernatur ducimus aperiam quod veritatis
+                  consequatur modi quibusdam.Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Similique consequatur dolore
+                  rerum aliquam impedit quibusdam reiciendis perspiciatis,
+                  provident id? Ad dolore nulla aspernatur ducimus aperiam quod
+                  veritatis consequatur modi quibusdam.
                 </p>
               </div>
             </article>
           </section>
-          <aside class="col-sm-6 float-end">
-            <h3>Temas</h3>
-            <div><p>Marketing</p></div>
-            <div><p>Desarrollo Web</p></div>
-            <div><p>E-commerce</p></div>
+
+          <style type="text/css">
+            .container-theme .icon-background {
+              background: #22a196;
+              font-size: 30px;
+              color: #fff;
+              width: 50px;
+              height: 50px;
+            }
+            .container-theme a {
+              text-decoration: none;
+              color: #000;
+              font-size: 20px;
+            }
+          </style>
+          <aside class="col-sm-6 col-md-6 col-lg-3 float-end">
+            <h3 class="text-center">Temas</h3>
+
+            <div class="d-flex align-items-center container-theme mb-3">
+              <div
+                class="d-flex align-items-center justify-content-center icon-background m-1"
+              >
+                <i class="fas fa-user"></i>
+              </div>
+              <a class="mx-3" href="#">Marketing</a>
+              <!-- <div class="theme"></div> -->
+            </div>
+            <div class="d-flex align-items-center container-theme mb-3">
+              <div
+                class="d-flex align-items-center justify-content-center icon-background m-1"
+              >
+                <i class="far fa-window-maximize"></i>
+              </div>
+              <a class="mx-3" href="#">Desarrollo Web</a>
+              <!-- <div class="theme"></div> -->
+            </div>
+            <div class="d-flex align-items-center container-theme mb-3">
+              <div
+                class="d-flex align-items-center justify-content-center icon-background m-1"
+              >
+                <i class="fas fa-cart-plus"></i>
+              </div>
+              <a class="mx-3" href="#">E-commerce</a>
+              <!-- <div class="theme"></div> -->
+            </div>
+
             <div>
-              <h3>¡Hablemos!</h3>
-              <p>
+              <h3 class="text-center mb-4">¡Hablemos!</h3>
+              <p class="text-center mb-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                 aperiam saepe quam accusantium quae ex rerum modi quaerat. Nisi
                 fugiat itaque commodi accusamus nostrum alias quam porro placeat
                 nobis aliquam.
               </p>
             </div>
-            <div></div>
+            <div class="d-flex justify-content-around">
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
           </aside>
         </div>
       </section>
 
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eos
-          harum consectetur tenetur quod qui reiciendis atque assumenda natus
-          dolorem! Quasi itaque quod quis ipsa dolor nobis officia laudantium
-          non?
-        </p>
+      <section class="container">
+        <div class="row">
+          <p class="mb-5 col-sm-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eos
+            harum consectetur tenetur quod qui reiciendis atque assumenda natus
+            dolorem! Quasi itaque quod quis ipsa dolor nobis officia laudantium
+            non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            eos harum consectetur tenetur quod qui reiciendis atque assumenda
+            natus dolorem! Quasi itaque quod quis ipsa dolor nobis officia
+            laudantium non?Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quasi eos harum consectetur tenetur quod qui reiciendis atque
+            assumenda natus dolorem! Quasi itaque quod quis ipsa dolor nobis
+            officia laudantium non?
+          </p>
+        </div>
       </section>
 
-      <section>
-        <div id="carouselExample" class="carousel slide">
+      <section class="container mb-5">
+        <div id="carouselExample" class="carousel slide row">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="">
-                <div style="width: 18rem">
-                  <p class="card-title">Hace 3 dias</p>
-                  <img
-                    class="card-img"
-                    src="./assets/images/blog/imgblog.png"
-                    alt="Imagen del blog"
-                  />
-                  <h4 class="card-title">Articulo</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Earum possimus aliquam id facere dicta amet nesciunt nostrum
-                    molestiae nam. Incidunt, consequuntur. Perferendis provident
-                    eaque optio tenetur laboriosam quam autem quod?
-                  </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col" style="width: 18rem">
+                    <p class="card-title text-end mb-2">Hace 3 dias</p>
+                    <img
+                      class="card-img mb-3"
+                      src="./assets/images/blog/imgblog.png"
+                      alt="Imagen del blog"
+                    />
+                    <h4 class="card-title">Articulo</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum possimus aliquam id facere dicta amet nesciunt
+                      nostrum molestiae nam. Incidunt, consequuntur. Perferendis
+                      provident eaque optio tenetur laboriosam quam autem quod?
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <i class="far fa-thumbs-up"></i>
+                      <i class="far fa-comments"></i>
+                      <i class="fas fa-share-alt-square"></i>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 18rem">
+                    <p class="card-title text-end mb-2">Hace 3 dias</p>
+                    <img
+                      class="card-img mb-3"
+                      src="./assets/images/blog/imgblog.png"
+                      alt="Imagen del blog"
+                    />
+                    <h4 class="card-title">Articulo</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum possimus aliquam id facere dicta amet nesciunt
+                      nostrum molestiae nam. Incidunt, consequuntur. Perferendis
+                      provident eaque optio tenetur laboriosam quam autem quod?
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <i class="far fa-thumbs-up"></i>
+                      <i class="far fa-comments"></i>
+                      <i class="fas fa-share-alt-square"></i>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 18rem">
+                    <p class="card-title text-end mb-2">Hace 3 dias</p>
+                    <img
+                      class="card-img mb-3"
+                      src="./assets/images/blog/imgblog.png"
+                      alt="Imagen del blog"
+                    />
+                    <h4 class="card-title">Articulo</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum possimus aliquam id facere dicta amet nesciunt
+                      nostrum molestiae nam. Incidunt, consequuntur. Perferendis
+                      provident eaque optio tenetur laboriosam quam autem quod?
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <i class="far fa-thumbs-up"></i>
+                      <i class="far fa-comments"></i>
+                      <i class="fas fa-share-alt-square"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div style="width: 18rem">
-                <p class="card-title">Hace 3 dias</p>
-                <img
-                  class="card-img"
-                  src="./assets/images/blog/imgblog.png"
-                  alt="Imagen del blog"
-                />
-                <h4 class="card-title">Articulo</h4>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                  possimus aliquam id facere dicta amet nesciunt nostrum
-                  molestiae nam. Incidunt, consequuntur. Perferendis provident
-                  eaque optio tenetur laboriosam quam autem quod?
-                </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col" style="width: 18rem">
+                    <p class="card-title text-end mb-2">Hace 3 dias</p>
+                    <img
+                      class="card-img mb-3"
+                      src="./assets/images/blog/imgblog.png"
+                      alt="Imagen del blog"
+                    />
+                    <h4 class="card-title">Articulo</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum possimus aliquam id facere dicta amet nesciunt
+                      nostrum molestiae nam. Incidunt, consequuntur. Perferendis
+                      provident eaque optio tenetur laboriosam quam autem quod?
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <i class="far fa-thumbs-up"></i>
+                      <i class="far fa-comments"></i>
+                      <i class="fas fa-share-alt-square"></i>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 18rem">
+                    <p class="card-title text-end mb-2">Hace 3 dias</p>
+                    <img
+                      class="card-img mb-3"
+                      src="./assets/images/blog/imgblog.png"
+                      alt="Imagen del blog"
+                    />
+                    <h4 class="card-title">Articulo</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum possimus aliquam id facere dicta amet nesciunt
+                      nostrum molestiae nam. Incidunt, consequuntur. Perferendis
+                      provident eaque optio tenetur laboriosam quam autem quod?
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <i class="far fa-thumbs-up"></i>
+                      <i class="far fa-comments"></i>
+                      <i class="fas fa-share-alt-square"></i>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 18rem">
+                    <p class="card-title text-end mb-2">Hace 3 dias</p>
+                    <img
+                      class="card-img mb-3"
+                      src="./assets/images/blog/imgblog.png"
+                      alt="Imagen del blog"
+                    />
+                    <h4 class="card-title">Articulo</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum possimus aliquam id facere dicta amet nesciunt
+                      nostrum molestiae nam. Incidunt, consequuntur. Perferendis
+                      provident eaque optio tenetur laboriosam quam autem quod?
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <i class="far fa-thumbs-up"></i>
+                      <i class="far fa-comments"></i>
+                      <i class="fas fa-share-alt-square"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div style="width: 18rem">
-                <p class="card-title">Hace 3 dias</p>
-                <img
-                  class="card-img"
-                  src="./assets/images/blog/imgblog.png"
-                  alt="Imagen del blog"
-                />
-                <h4 class="card-title">Articulo</h4>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                  possimus aliquam id facere dicta amet nesciunt nostrum
-                  molestiae nam. Incidunt, consequuntur. Perferendis provident
-                  eaque optio tenetur laboriosam quam autem quod?
-                </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col" style="width: 18rem">
+                    <p class="card-title text-end mb-2">Hace 3 dias</p>
+                    <img
+                      class="card-img mb-3"
+                      src="./assets/images/blog/imgblog.png"
+                      alt="Imagen del blog"
+                    />
+                    <h4 class="card-title">Articulo</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum possimus aliquam id facere dicta amet nesciunt
+                      nostrum molestiae nam. Incidunt, consequuntur. Perferendis
+                      provident eaque optio tenetur laboriosam quam autem quod?
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <i class="far fa-thumbs-up"></i>
+                      <i class="far fa-comments"></i>
+                      <i class="fas fa-share-alt-square"></i>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 18rem">
+                    <p class="card-title text-end mb-2">Hace 3 dias</p>
+                    <img
+                      class="card-img mb-3"
+                      src="./assets/images/blog/imgblog.png"
+                      alt="Imagen del blog"
+                    />
+                    <h4 class="card-title">Articulo</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum possimus aliquam id facere dicta amet nesciunt
+                      nostrum molestiae nam. Incidunt, consequuntur. Perferendis
+                      provident eaque optio tenetur laboriosam quam autem quod?
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <i class="far fa-thumbs-up"></i>
+                      <i class="far fa-comments"></i>
+                      <i class="fas fa-share-alt-square"></i>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 18rem">
+                    <p class="card-title text-end mb-2">Hace 3 dias</p>
+                    <img
+                      class="card-img mb-3"
+                      src="./assets/images/blog/imgblog.png"
+                      alt="Imagen del blog"
+                    />
+                    <h4 class="card-title">Articulo</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Earum possimus aliquam id facere dicta amet nesciunt
+                      nostrum molestiae nam. Incidunt, consequuntur. Perferendis
+                      provident eaque optio tenetur laboriosam quam autem quod?
+                    </p>
+                    <div class="d-flex justify-content-between">
+                      <i class="far fa-thumbs-up"></i>
+                      <i class="far fa-comments"></i>
+                      <i class="fas fa-share-alt-square"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -134,8 +403,9 @@
             data-bs-target="#carouselExample"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <i class="fas fa-arrow-left"></i>
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span> -->
           </button>
           <button
             class="carousel-control-next"
@@ -143,12 +413,31 @@
             data-bs-target="#carouselExample"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <i class="fas fa-arrow-right"></i>
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span> -->
           </button>
         </div>
       </section>
-
+      <div>
+        <form action="">
+          <input
+            class="d-block mx-auto mb-2"
+            type="text"
+            placeholder="Nombre"
+          />
+          <input class="d-block mx-auto mb-2" type="text" placeholder="Email" />
+          <textarea
+            class="d-block mx-auto m-2"
+            name=""
+            id=""
+            cols="30"
+            rows="3"
+            placeholder="Mensaje"
+          ></textarea>
+          <input class="d-block mx-auto mb-5" type="submit" value="Contacto" />
+        </form>
+      </div>
     </main>
     <footer></footer>
     <script

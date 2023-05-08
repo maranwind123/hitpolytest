@@ -1,0 +1,61 @@
+.btnver {
+    width: 194px;
+    height: 52px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #FF6000;
+    color: white;
+    font-size: 25px;
+}
+
+.fab{
+    font-size: 30px;
+    color: #22A196;
+}
+
+.fa-thumbs-up, .fa-comments, .fa-share-alt-square{
+font-size: 30px;
+color: #22A196;
+}
+
+/* .img-detalle{
+    width: 621px;
+    height: 345px;
+} */
+
+@media (min-width: 992px) { .fa-arrow-left{
+    font-size: 50px;
+    color: black;
+    position: absolute;
+    right: 180px;    
+}
+
+.fa-arrow-right{
+    font-size: 50px;
+    color: black;
+    position: absolute;
+    left: 180px; 
+}}
+
+
+form input[type="text"]{
+    width: 320px;
+    height: 48px;
+}
+textarea{
+    width: 320px;
+    height: 89px;
+}
+form input[type="submit"]{
+    width: 139px;
+    height: 51px;
+    background-color: #FF6000;
+    border: 1px solid;
+    color: white;
+}
+
+@media (min-width: 992px) { .img-detalle{
+    width: 521px;
+    height: 345px;
+} }
+
